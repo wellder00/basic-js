@@ -19,12 +19,17 @@ function countCats(matrix) {
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
       if (matrix[i][j] === '^^') {
-        index++;
+        index++; /*?+*/
       }
     }
   }
   return index;
 }
+countCats([
+    [0, 1, '^^'],
+    [0, '^^', 2],
+    ['^^', 1, 2]
+   ])
 
 module.exports = {
   countCats,
